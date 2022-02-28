@@ -1,5 +1,4 @@
 
+const stuff;
 
-createImageBitmap(AbortController) {
-    AnimationEffect(AnimationTimeline);
-}
+createImageBitmap(AbortController);
