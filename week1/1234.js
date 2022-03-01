@@ -1,4 +1,0 @@
-
-const stuff;
-
-createImageBitmap(AbortController);
