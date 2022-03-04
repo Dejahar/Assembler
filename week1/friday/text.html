@@ -5,15 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Text</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+      .examples-box {
+        padding: 10px;
+      }
+    </style>
   </head>
-  <style>
-    h1 {
-      text-align: center;
-    }
-    .examples-box {
-      padding: 10px;
-    }
-  </style>
+
   <body>
     <h1>Text</h1>
     <div class="subject-intro">
@@ -25,7 +26,7 @@
     <div class="examples">
       <!-- Strong -->
       <div class="examples-box">
-        <p>For strong text <code>&lt;strong&gt;</code>:</p>
+        <p>For strong text <code>&lt;strong&gt; &lt;/strong&gt;</code>:</p>
         <p>
           Lorem, ipsum <strong>¡¡Strong word!!</strong> dolor sit amet
           consectetur adipisicing elit. Iure, debitis!
@@ -33,23 +34,35 @@
       </div>
       <!-- Strikethrough -->
       <div class="examples-box">
-        <p>For Strikedthrough text<code>&lt;del&gt;</code>:</p>
-        <p><del>Lorem ipsum dolor</del>, sit amet consectetur adipisicing elit. Sit, dolorem?</p>
+        <p>For Strikedthrough text <code>&lt;el&gt; &lt;/el&gt;</code>:</p>
+        <p>
+          Lorem ipsum dolor<del>¡¡Strikedthrough!!</del>, sit amet consectetur
+          adipisicing elit. Sit, dolorem?
+        </p>
       </div>
       <!-- Italics -->
       <div class="examples-box">
-        <p>For Italic text<code>&lt;i&gt;</code>:</p>
-        <p><i>Lorem ipsum dolor</i> sit amet consectetur adipisicing elit. Pariatur, amet!</p>
+        <p>For Italic text<code>&lt;i&gt; &lt;/i&gt;</code>:</p>
+        <p>
+          Lorem ipsum dolor <i>¡¡Italic!!</i> sit amet consectetur adipisicing
+          elit. Pariatur, amet!
+        </p>
       </div>
       <!-- Subscript -->
       <div class="examples-box">
-        <p>For subscript text <code>&lt;sub&gt;</code></p>
-        <p>Lorem ipsum dolor<sub>¡¡Subscript Word!!</sub> sit amet consectetur adipisicing elit. Quae, fugit.</p>
+        <p>For subscript text <code>&lt;sub&gt; &lt;/sub&gt;</code>:</p>
+        <p>
+          Lorem ipsum dolor<sub>¡¡Subscript Word!!</sub> sit amet consectetur
+          adipisicing elit. Quae, fugit.
+        </p>
       </div>
       <!-- Superscript -->
       <div class="examples-box">
-          <p>For Super</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, fugit.</p>
+        <p>For Superscript <code>&lt;sup&gt; &lt;/sup&gt;</code>:</p>
+        <p>
+          Lorem ipsum dolor <sup>¡¡Superscript text!!</sup>sit amet
+          consecteturadipisicing elit. Quae, fugit.
+        </p>
       </div>
     </div>
     <a href="index.html">Back</a>

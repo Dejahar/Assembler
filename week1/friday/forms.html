@@ -5,48 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Forms</title>
+    <style>
+        h1 {
+          text-align: center;
+        }
+        .example-box {
+          padding: 20px 0 20px 0;
+        }
+      </style>
   </head>
-  <style>
-    h1 {
-      text-align: center;
-    }
-    .example-box {
-      padding: 20px 0 20px 0;
-    }
-  </style>
+
   <body>
     <h1>Forms</h1>
     <div class="subject-intro">
-      <p><code>&lt;svg&gt;</code> a <code>&lt;canvas&gt;</code></p>
+      <p>An HTML form is used to collect user input. The user input is most often sent to a server for processing.</div>
     </div>
     <h4>Example of a Form</h4>
     <div class="example-box">
-      <form action="">
-        <lable for="name">Name<lable><<br>r>>
-        <input type="text" placeholder="Write you name" /><br>
-        <lable for="password">Password<lable><br>
-        <input type="password" placeholder="Pick a password" /><br>
-        <input type=" button" name="" id="">
-        <input type="checkbox">
-        <input type="color">
-        <input type="date">
-        <input type="month" placeholder="">
-        <input type="email" placeholder=""/>
-        <input type="image" placeholder="" />
-        <input type="file" placeholder=""/>
-        <input type="hidden" placeholder="" />
-        <input type="number" placeholder="Pick a number" />
-        <input type="radio" placeholder="Many choices to choose from?" />
-        <input type="range" placeholder="??" />
-        <input type="search" placeholder="??" />
-        <input type="tel" placeholder="Your phone number" />
-        <input type="text" placeholder="write your essay" />
-        <input type="time" placeholder="Select the time" />
-        <input type="url" placeholder="Write your website address" />
-        <input type="week" placeholder="Select the week" />
-        <input type="reset" placeholder="Reset the forms" />
+      <form action="" oninput="x.value=parseInt(a.value)+parseInt(b.value)" id="form-demo">
+          <!-- ********INPUT TYPES ******** -->
+        <label for="name" >Name</label><br>
+          <input type="text" placeholder="Write you name" maxlength="25" autofocus 
+        pattern="[A-Za-z]{*}" title="only Alphabetical characters" /><br>
+        <label for="password" >Password</label><br>
+        <input type="password" required placeholder="Write your password"/><br> 
+        <label for="color">Pick a color</label><br>
+        <input type="color"><br>
+        <label for="date">Pick a date</label><br>
+        <input type="date"><br> 
+        <label for="month">Month</label><br>
+        <input type="month" ><br> 
+        <label for="email">Insert your email</label><br>
+        <input type="email" placeholder="Email here" /><br> 
+        <input type="image" src="assets/bcn_img.jpg" width="100" height="100"/><br> 
+        <label for="file">Upload a file</label><br>
+        <input type="file" multiple /><br> 
+        <input type="hidden" placeholder="" /><br> 
+        <label for="number">Pick a number</label><br>
+        <input type="number" placeholder="Pick a number" /><br> 
+        <label for="age">Select your age</label><br>
+        <input type="range" min="10" max="120" step="1" /><br> 
+        <label for="search">Search for something</label><br>
+        <input type="search" readonly placeholder="mirror mirror on the wall who's the fairest of them all?" /><br> 
+        <label for="phone">Add your phone number</label><br>
+        <input type="tel" placeholder="Your phone number" /><br> 
+        <label for="essay">Write some text</label><br>
+        <input type="text" placeholder="write your essay" /><br> 
+        <label for="time">Select the time</label>/label>
+        <input type="time" /><br> 
+        <label for="url">Do you have a website?</label><br>
+        <input type="url" disabled placeholder="Write your website address" /><br> 
+        <label for="week">Select a week</label><br>
+        <input type="week" placeholder="Select the week" /><br> 
+        <input type="reset" placeholder="Reset the forms" /><br><br>
+        <input type="button" value="This is a button"/><br><br>
+        <input type="text" size="4" placeholder="Pin"/><br><br>
+        <label for="name">Form attr:</label><br>
+        <input name="name" form="form-demo">
 
-        <!-- Input radio -->
+        
+        <!-- Radio input type -->
         <div class="radio">
         <p>Please select your favorite Web language:</p>
         <input type="radio" id="html" name="fav_language" value="HTML">
@@ -57,8 +75,77 @@
         <label for="javascript">JavaScript</label>
         </div>
 
-        <!-- Checkbox-->
+        <!-- Checkbox input type-->
+        <div class="checbox">
+         <p>Select your vehicle:</p>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> I have a bike</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> I have a car</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> I have a boat</label><br><br>
+        </div>
         
+        <!--****** ELEMENTS *******-->
+        <!-- Select element -->
+        <div class="select" >
+            <label for="cars">Choose a car:</label>
+            <select name="cars" id="cars" multiple>
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="opel">Opel</option>
+                <option value="audi">Audi</option>
+              </select>
+        </div><br>
+
+        <!-- Datalist element -->
+        <div class="datalist">
+            <label for="browser">Choose your browser from the list:</label>
+            <input list="browsers" name="browser" id="browser">
+            <datalist id="browsers">
+                <option value="Edge">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+              </datalist>
+        </div>
+
+
+        <!-- Fieldset element-->
+        <div class="fieldset">
+            <fieldset>
+                <legend>Fieldset example:</legend>
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname"><br><br>
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="birthday">Birthday:</label>
+                <input type="date" id="birthday" name="birthday"><br><br>
+                <input type="submit" value="Submit">
+               </fieldset>
+        </div>
+
+        <!-- Textarea element -->
+        <div class="textarea">
+            <label for="message">Message: </label><br>
+             <textarea name="message" id="message" cols="30" rows="4" placeholder="Write a message"></textarea>
+        </div>
+       
+        <!--Output element -->
+        <div class="output">
+          <label for=" Sum Calculator"></label>         
+          <input type="range" id="a" value="50">
+          +<input type="number" id="b" value="25">
+          =<output name="x" for="a b"></output>            
+        </div>
+
+        <!-- Button element -->
+        <div class="button">
+            <button>Click here!!</button>
+        </div>
         <input type="submit" value="Submit" />
       </form>
     </div>
