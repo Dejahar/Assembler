@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Images</title>
+  </head>
+  <style>
+    h1 {
+      text-align: center;
+    }
+    .example-box {
+      padding: 10px;
+    }
+  </style>
+
+  <body>
+    <h1>Images</h1>
+    <div class="subject-intro">
+      <p>
+        The HTML <code>&lt;img&gt;&lt;/img&gt;</code> tag is used to embed an
+        image in a web page. Images are not technically inserted into a web
+        page; images are linked to web pages. <br />
+        The<code>&lt;img&gt;&lt;/img&gt;</code> tag creates a holding space for
+        the referenced image. The <code>&lt;img&gt;&lt;/img&gt;</code> tag is
+        empty, it contains attributes only, and does not have a closing tag.<br />
+        The<code>&lt;img&gt;&lt;/img&gt;</code> tag has two required
+        attributes:<br />
+        src - Specifies the path to the image <br />
+        alt - Specifies an alternate text for the image
+      </p>
+    </div>
+    <div class="example">
+      <!--With alt attribute -->
+      <div class="example-box">
+        <p>Alt attribute:</p>
+        <img src="assets/bcn_img.jpg" alt="Esto es una imagen de Barcelona" />
+      </div>
+      <!--With a fixed height and width -->
+      <div class="example-box">
+        <p>fixed height and width:</p>
+        <img src="assets/bcn_img.jpg" width="200" height="200" />
+      </div>
+
+      <!--Image as a link-->
+      <div class="example-box">
+        <p>Image as a link:</p>
+        <a href="https://www.barcelona.cat/ca/"
+          ><img src="assets/bcn_img.jpg"
+        /></a>
+      </div>
+    </div>
+    <a href="index.html">Back</a>
+  </body>
+</html>

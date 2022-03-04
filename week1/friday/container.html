@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Containers</title>
+  </head>
+  <style>
+    h1 {
+      text-align: center;
+    }
+    .example-box {
+      padding: 20px;
+    }
+  </style>
+  <body>
+    <h1>Containers</h1>
+    <div class="subject-intro"></div>
+    <pre>
+            <p>
+The container tags are tags that have some content between their opening and closing tags. 
+Some examples are the<code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, and<code>&lt;body&gt;</code> tags.
+The <code>&lt;html&gt;</code> tag is used to contain all other tags that make up your webpage.
+The <code>&lt;head&gt;</code> tag is used to add meta information to your webpage that will be used by the browser.
+            </p>
+        </pre>
+    <div class="example">
+      <div class="example-box">
+        <!--○	Blockquote -->
+        <p>
+          Tag is used to contain references from a website
+          <code>&lt;blockquote&gt; &lt;/blockquote&gt;</code>:
+        </p>
+
+        <blockquote cite="http://www.worldwildlife.org/who/index.html">
+          For 60 years, WWF has worked to help people and nature thrive.
+        </blockquote>
+      </div>
+      <div class="example-box">
+        <!--○	Div-->
+        <p>
+          Tag defines a division or a section in an HTML document
+          <code>&lt;div&gt; &lt;/div&gt;</code> :
+        </p>
+        <div>This is a div</div>
+      </div>
+      <div class="example-box">
+        <!--○	Area -->
+        <p>
+          Tag defines an image map with clickable areas
+          <code>&lt;area&gt; &lt;/area&gt;</code> :
+        </p>
+        <img
+          src="assets/bcn_img.jpg"
+          alt="Esto es una imagen de Barcelona"
+          usemap="#BCNmap"
+        />
+        <map name="BCNmap">
+          <area shape="rect" coords="0,0,82,126" href="index.html" alt="back" />
+        </map>
+      </div>
+      <div class="example-box">
+        <!--○	Section -->
+        <p>
+          Is a structural HTML element used to group together related elements
+          <code>&lt;section&gt; &lt;/section&gt;</code>:
+        </p>
+        <section>Esto es una section!!!</section>
+      </div>
+      <div class="example-box">
+        <!--○	Aside-->
+        <p>
+          Represents a portion of a document whose content is only indirectly
+          related to the document's main content
+          <code>&lt;aside&gt; &lt;/aside&gt;</code>:
+        </p>
+        <aside>Esto es un aside!!</aside>
+      </div>
+      <div class="example-box">
+        <!--○	Paragraphs-->
+        <p>
+          The HTML <code>&lt;p&gt;</code> element defines a paragraph. A
+          paragraph always starts on a new line, and browsers automatically add
+          some white space (a margin) before and after a paragraph.
+        </p>
+      </div>
+      <div class="example-box">
+        <!--Article With a header element-->
+        <article>
+          <h4>Article with heading</h4>
+          <p>
+            The <code>&lt;article&gt;</code> HTML element represents a
+            self-contained composition in a document, page, application, or
+            site, which is intended to be independently distributable or
+            reusable. This text in an example of an article with a header
+          </p>
+        </article>
+      </div>
+      <div class="example-box">
+        <!--Nav-->
+        <p>
+          The <code>&lt;nav&gt;</code> tag defines a set of navigation links.
+          Notice that NOT all links of a document should be inside a
+          <code>&lt;nav&gt;</code> element. The
+          <code>&lt;nav&gt;</code> elementis intended only for major block of
+          navigation links. Browsers, such as screen readers for disabled users,
+          can use this element to determine whether to omit the initial
+          rendering of this content.
+        </p>
+      </div>
+      <div class="example-box">
+        <!--Footer-->
+        <p>
+          The <code>&lt;footer&gt;</code> HTML element represents a footer for
+          its nearest sectioning content or sectioning root element. A
+          <code>&lt;footer&gt;</code> typically contains information about the
+          author of the section, copyright data or links to related documents
+        </p>
+      </div>
+      <div class="example-box">
+        <!--Template-->
+        <p>
+          Is a mechanism for holding HTML that is not to be rendered immediately
+          when a page is loaded but may be instantiated subsequently during
+          runtime using JavaScript:
+          <code>&lt;template&gt; &lt;/template&gt;</code>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
