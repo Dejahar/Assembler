@@ -14,40 +14,46 @@
       }
     </style>
   </head>
-
+  
   <body>
     <h1>Images</h1>
     <div class="subject-intro">
       <p>
-        The HTML <code>&lt;img&gt;&lt;/img&gt;</code> tag is used to embed an
-        image in a web page. Images are not technically inserted into a web
-        page; images are linked to web pages. <br />
-        The<code>&lt;img&gt;&lt;/img&gt;</code> tag creates a holding space for
-        the referenced image. The <code>&lt;img&gt;&lt;/img&gt;</code> tag is
-        empty, it contains attributes only, and does not have a closing tag.<br />
-        The<code>&lt;img&gt;&lt;/img&gt;</code> tag has two required
-        attributes:<br />
-        src - Specifies the path to the image <br />
-        alt - Specifies an alternate text for the image
+        The HTML <code>&lt;img&gt;</code> tag is used to embed an image in a web
+        page. Images are not technically inserted into a web page; images are
+        linked to web pages.
       </p>
+      <p>
+        The <code>&lt;img&gt;</code> tag creates a holding space for the
+        referenced image. The <code>&lt;img&gt;</code> tag is empty, it contains
+        attributes only, and does not have a closing tag.
+      </p>
+      <div>
+        <p>The <code>&lt;img&gt;</code> tag has two required attributes:</p>
+
+        <ul>
+          <li>src - Specifies the path to the image</li>
+          <li>alt - Specifies an alternate text for the image</li>
+        </ul>
+      </div>
     </div>
     <div class="example">
       <!--With alt attribute -->
       <div class="example-box">
         <p>Alt attribute:</p>
-        <img src="assets/bcn_img.jpg" alt="Esto es una imagen de Barcelona" />
+        <img src="assets/bcn_img.jpg" alt="this is a picture of Barcelona" />
       </div>
       <!--With a fixed height and width -->
       <div class="example-box">
         <p>fixed height and width:</p>
-        <img src="assets/bcn_img.jpg" width="200" height="200" />
+        <img src="assets/bcn_img.jpg" alt="this is a picture of Barcelona" width="200" height="200" />
       </div>
 
       <!--Image as a link-->
       <div class="example-box">
         <p>Image as a link:</p>
         <a href="https://www.barcelona.cat/ca/"
-          ><img src="assets/bcn_img.jpg"
+          ><img src="assets/bcn_img.jpg" alt="this is a picture of Barcelona"
         /></a>
       </div>
     </div>

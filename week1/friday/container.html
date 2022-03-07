@@ -10,11 +10,10 @@
         text-align: center;
       }
       .example-box {
-        padding: 20px;
+        padding: 30px;
       }
     </style>
   </head>
-
   <body>
     <h1>Containers</h1>
     <div class="subject-intro"></div>
@@ -31,7 +30,6 @@
           Tag is used to contain references from a website
           <code>&lt;blockquote&gt; &lt;/blockquote&gt;</code>:
         </p>
-
         <blockquote cite="http://www.worldwildlife.org/who/index.html">
           For 60 years, WWF has worked to help people and nature thrive.
         </blockquote>
@@ -42,7 +40,10 @@
           Tag defines a division or a section in an HTML document
           <code>&lt;div&gt; &lt;/div&gt;</code> :
         </p>
-        <div>This is a div</div>
+        <div>
+          <h2>This is a heading in a div element</h2>
+          <p>This is some text in a div element.</p>
+        </div>
       </div>
       <div class="example-box">
         <!--○	Area -->
@@ -65,7 +66,15 @@
           Is a structural HTML element used to group together related elements
           <code>&lt;section&gt; &lt;/section&gt;</code>:
         </p>
-        <section>Esto es una section!!!</section>
+        <section>
+          <h2>Section title</h2>
+          <p>
+            The World Wide Fund for Nature (WWF) is an international
+            organization working on issues regarding the conservation, research
+            and restoration of the environment, formerly named the World
+            Wildlife Fund. WWF was founded in 1961.
+          </p>
+        </section>
       </div>
       <div class="example-box">
         <!--○	Aside-->
@@ -74,7 +83,14 @@
           related to the document's main content
           <code>&lt;aside&gt; &lt;/aside&gt;</code>:
         </p>
-        <aside>Esto es un aside!!</aside>
+        <aside>
+          <h4>Aside title</h4>
+          <p>
+            Epcot is a theme park at Walt Disney World Resort featuring exciting
+            attractions, international pavilions, award-winning fireworks and
+            seasonal special events.
+          </p>
+        </aside>
       </div>
       <div class="example-box">
         <!--○	Paragraphs-->
@@ -83,16 +99,29 @@
           paragraph always starts on a new line, and browsers automatically add
           some white space (a margin) before and after a paragraph.
         </p>
+        <p>This is a paragraph.</p>
+        <p>This is another paragraph.</p>
       </div>
       <div class="example-box">
         <!--Article With a header element-->
+        <p>
+          The <code>&lt;article&gt;</code> HTML element represents a
+          self-contained composition in a document, page, application, or site,
+          which is intended to be independently distributable or reusable. This
+          text in an example of an article with a heading.
+        </p>
         <article>
-          <h4>Article with heading</h4>
+          <h2>Google Chrome</h2>
           <p>
-            The <code>&lt;article&gt;</code> HTML element represents a
-            self-contained composition in a document, page, application, or
-            site, which is intended to be independently distributable or
-            reusable. This text in an example of an article with a header
+            Google Chrome is a web browser developed by Google, released in
+            2008. Chrome is the world's most popular web browser today!
+          </p>
+        </article>
+        <article>
+          <h2>Microsoft Edge</h2>
+          <p>
+            Microsoft Edge is a web browser developed by Microsoft, released in
+            2015. Microsoft Edge replaced Internet Explorer.
           </p>
         </article>
       </div>
@@ -107,6 +136,12 @@
           can use this element to determine whether to omit the initial
           rendering of this content.
         </p>
+        <nav>
+          <a href="index.html">Index</a>
+          <a href="links.html">Links</a>
+          <a href="button.html">Buttons</a>
+          <a href="graphics.html">Graphics</a>
+        </nav>
       </div>
       <div class="example-box">
         <!--Footer-->
@@ -116,6 +151,12 @@
           <code>&lt;footer&gt;</code> typically contains information about the
           author of the section, copyright data or links to related documents
         </p>
+        <footer>
+          <p>
+            Author: Hege Refsnes<br />
+            <a href="mailto:hege@example.com">footer@example.com</a>
+          </p>
+        </footer>
       </div>
       <div class="example-box">
         <!--Template-->
@@ -127,5 +168,6 @@
         </p>
       </div>
     </div>
+    <a href="index.html">Back</a>
   </body>
 </html>
