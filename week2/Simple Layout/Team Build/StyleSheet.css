@@ -1,0 +1,198 @@
+*{
+    background-color: #6b705c;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color:aliceblue ;
+}
+
+.image{
+    width: 200px;
+    height: 200px;
+    border-radius:5px;
+}
+.container {
+    border: solid;
+    padding: 40px;
+    margin: 40px;
+    text-align: center;
+    float: flex;
+    overflow: auto;
+}
+
+.div1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    overflow: auto;
+}
+
+.link li{
+    float: left;
+    padding: 10px;
+}
+.socialmedia li{
+    float: right;
+    padding: 5px;
+}
+
+.sidebar{
+    padding: 50px 0px 50px 0px;
+    border: solid;
+    user-select: none;
+    float: left;
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    transition: all 1s ease-in-out;
+}
+.sidebar li a:hover{
+    color:red;
+    transform:scale(1.1);
+}
+
+.content{
+    border: none;
+    float:inherit;
+    overflow: inherit;
+}
+
+.content div{
+    margin: 10px;
+}
+.div1{
+    border: none;
+}
+
+h2{
+    text-align: center;
+    color: #21221f;
+}
+
+textarea{
+    background-color: darkgrey;
+    color: black;
+}
+
+input{
+    background-color:darkgrey;
+}
+
+p{
+    font-weight: bold;
+}
+
+.copyright{
+    border:none;
+    text-align: auto;
+}
+
+button{
+    background-color: #6b705c;
+    color: #404239;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+button:hover{
+    color: #383a32;
+}
+
+.menu-button {
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: #383a32;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    border-radius: 8px;
+}
+
+/* Animation shenanigans */
+
+#animated_div1 {
+    /* width:100px; */
+    /* height:47px; */
+    /* background: #92B901; */
+    /* color: #ffffff; */
+    position: relative;
+    font-weight:bold;
+    font-size:20px;
+    padding:10px;
+    animation:animated_div1 5s 1;
+    /* -moz-animation:animated_div1 5s 1; */
+    /* -webkit-animation:animated_div1 5s 1; */
+    /* -o-animation:animated_div1 5s 1; */
+    width:50px; height:50px; border-radius:5px;
+    }
+
+#animated_div2 {
+    /* width:100px; */
+    /* height:47px; */
+    /* background: #92B901; */
+    /* color: #ffffff; */
+    position: relative;
+    font-weight:bold;
+    font-size:20px;
+    padding:10px;
+    animation:animated_div2 5s 1;
+    /* -moz-animation:animated_div1 5s 1; */
+    /* -webkit-animation:animated_div1 5s 1; */
+    /* -o-animation:animated_div1 5s 1; */
+    width:50px; height:50px; border-radius:5px;
+    }
+
+@keyframes animated_div1
+{
+/* 0% {transform: rotate(0deg);left:500px;}
+25% {transform: rotate(20deg);left:0px;}
+50% {transform: rotate(0deg);left:500px;}
+55% {transform: rotate(0deg);left:500px;}
+70% {transform: rotate(0deg);left:500px;background:#1ec7e6;} */
+100% {transform: rotate(-360deg);left:0px;}
+}
+
+@keyframes animated_div2
+{
+/* 0% {transform: rotate(0deg);left:500px;}
+25% {transform: rotate(20deg);left:0px;}
+50% {transform: rotate(0deg);left:500px;}
+55% {transform: rotate(0deg);left:500px;}
+70% {transform: rotate(0deg);left:500px;background:#1ec7e6;} */
+100% {transform: rotate(360deg);right:0px;}
+}
+
+@-webkit-keyframes animated_div1
+{
+0% {-webkit-transform: rotate(0deg);left:0px;}
+25% {-webkit-transform: rotate(20deg);left:0px;}
+50% {-webkit-transform: rotate(0deg);left:500px;}
+55% {-webkit-transform: rotate(0deg);left:500px;}
+70% {-webkit-transform: rotate(0deg);left:500px;background:#1ec7e6;} */
+/* 100% {-webkit-transform: rotate(-360deg);left:0px;} */
+}
+
+@-moz-keyframes animated_div1
+{
+0%  {-moz-transform: rotate(0deg);left:0px;}
+25% {-moz-transform: rotate(20deg);left:0px;}
+50%  {-moz-transform: rotate(0deg);left:500px;}
+55%  {-moz-transform: rotate(0deg);left:500px;}
+70%  {-moz-transform: rotate(0deg);left:500px;background:#1ec7e6;}
+100% {-moz-transform: rotate(-360deg);left:0px;}
+}
+
+@-o-keyframes animated_div1
+{
+0% {transform: rotate(0deg);left:0px;}
+25% {transform: rotate(20deg);left:0px;}
+50%  {transform: rotate(0deg);left:500px;}
+55%  {transform: rotate(0deg);left:500px;}
+70%  {transform: rotate(0deg);left:500px;background:#1ec7e6;}
+100% {transform: rotate(360deg);left:0px;}
+}

@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 960px;
+    text-decoration: none;
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* HEADER */
+
+.nav-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.071);
+    padding: 10px;
+}
+
+.nav-logo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.nav-menu-list{
+    display: inline-flex;
+    justify-content: space-between;
+    gap: 15px;
+    list-style: none;
+}
+
+.header-img img{
+    width: 960px;
+    height: 200px;
+    object-fit: fill;
+}
+
+/* BODY CONTENT */
+
+.body-content{
+    max-width: 960px;
+    margin: auto auto;
+    display:grid;
+    grid-template-rows: fit-content(50px) 1fr;
+    gap:12px;
+}
+
+.category-header{
+    background-color: darkslategray;
+    height: 50px;
+    text-align: center;
+}
+
+.category-pages{
+    max-width: 960px;
+    margin: 0 auto;
+    display: grid;
+    gap: 12px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.category-page{
+    position:relative;
+    transition:all 0.4s ;
+}
+
+.category-page img{
+    width: 468px;
+    height: 208px;
+    object-fit: fill;
+}
+
+.category-page a{
+    position: absolute;
+    top: 75%;
+    left: 20%;
+}
+
+.category-page a h4{
+    color: #fff;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    font-size: xx-large;
+}
+
+
+/* FOOTER */
+
+.footer-content{
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 10px;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+    list-style: none;
+}
+
+.footer-content h4{
+    font-size: large;
+    text-align: justify;
+    text-transform: uppercase;
+}
+
+/* EARINGS PAGE */
+
+.product-content{
+}
+
+.address-guide{
+    display: flex;
+    padding: 10px;
+}
+
+.home-button{
+    cursor: pointer;
+}
+.earing-button{
+    cursor: pointer;
+}
+
+.product-grid-nav{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.product-grid-nav img{
+    width: 200px;
+    height: 180px;
+    object-fit: fill;
+}
+
+.product-grid-nav h4{
+    width: 200px;
+    text-align: center;
+}
+
+.product-grid-nav p{
+    width: 200px;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
