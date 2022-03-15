@@ -106,9 +106,6 @@
 
 /* EARINGS PAGE */
 
-.product-content{
-}
-
 .address-guide{
     display: flex;
     padding: 10px;
@@ -144,4 +141,116 @@
     font-family:Verdana, Geneva, Tahoma, sans-serif
 }
 
-/* PRODUCT PAGE */
+/* PRODUCT BODY PAGE */
+
+.header-text h2{
+    text-align: center;
+}
+
+.productPage-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* border-style: solid; */
+}
+
+.product-grid-img{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 12px;
+    /* border-style: solid; */
+}
+
+.main-img{
+    width: 300px;
+    height: 250px;
+    object-fit: fill;
+}
+
+.img-scroll img{
+    width: 50px;
+    height: 50px;
+    object-fit: fill;
+}
+
+.img-scroll li{
+    display: inline;
+}
+
+.product-grid-details{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: stretch;
+
+    /* border-style: solid; */
+}
+
+.product-details-header h4{
+    text-align: center;
+}
+
+.product-details-button{
+    cursor: pointer;
+}
+
+.product-details-icons li{
+    display: inline;
+}
+
+.product-details li{
+    list-style-type: disc;
+}
+
+/* PRODUCT FOOTER PAGE */
+
+.product-footer{
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 12px;
+}
+
+.product-footer img{
+    width: 200px;
+    height: 180px;
+    object-fit: fill;
+}
+
+/* FAQ PAGE */
+.header-text{
+    text-align: center;
+}
+
+.faq-header{
+    display: flex;
+    justify-content: center;
+}
+
+.faq-header-img img{
+    width: 960px;
+    height: 400px;
+    object-fit: fill;
+    position: relative;    
+    transition:all 0.4s ;
+}
+.header-img-text{
+    position: absolute;
+    right:20%;
+    top:55%;
+    color: white;
+    text-shadow: #000;
+    font-size: xx-large;
+}
+
+/* FAQ CONTENT */
+.faq-content{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.faq-divider{
+    border-left: 6px solid burlywood;
+    /* height: 50px; */
+    /* left: 50%; */
+    /* margin-left: -3px; */
+    /* top: 0; */
+}
