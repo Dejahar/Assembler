@@ -229,7 +229,7 @@
     width: 960px;
     height: 400px;
     object-fit: fill;
-    position: relative;    
+    position: relative;
     transition:all 0.4s ;
 }
 .header-img-text{
@@ -249,8 +249,4 @@
 
 .faq-divider{
     border-left: 6px solid burlywood;
-    /* height: 50px; */
-    /* left: 50%; */
-    /* margin-left: -3px; */
-    /* top: 0; */
 }
