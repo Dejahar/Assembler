@@ -106,6 +106,29 @@
 
 /* EARINGS PAGE */
 
+.earing-header{
+    display: flex;
+    justify-content: center;
+}
+
+.earing-header img{
+    width: 960px;
+    height: 200px;
+    border-radius: 5px;
+    object-fit: fill;
+    position: relative;
+    transition:all 0.4s ;
+}
+.header-earing-text{
+    position: absolute;
+    right:20%;
+    top:20%;
+    color: white;
+    text-shadow: #000;
+    font-size: xx-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 .address-guide{
     display: flex;
     padding: 10px;
@@ -218,6 +241,8 @@
 /* FAQ PAGE */
 .header-text{
     text-align: center;
+    font-size: x-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .faq-header{
@@ -228,6 +253,7 @@
 .faq-header-img img{
     width: 960px;
     height: 400px;
+    border-radius: 5px;
     object-fit: fill;
     position: relative;
     transition:all 0.4s ;
@@ -235,7 +261,7 @@
 .header-img-text{
     position: absolute;
     right:20%;
-    top:55%;
+    top:60%;
     color: white;
     text-shadow: #000;
     font-size: xx-large;
