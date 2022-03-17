@@ -13,7 +13,8 @@
  */
 function makeNullUndefinedVariables() {
   // Write your code here
-
+  var undefinedVar = undefined;
+  var nullVar = null;
   // Don’t change this code
   return {
     undefinedVar: undefinedVar,

@@ -20,7 +20,7 @@ function getValueInArray() {
   let result;
 
   // Add your code here
-
+  result = fruits[3];
   // Don’t change this code
   return result;
 }

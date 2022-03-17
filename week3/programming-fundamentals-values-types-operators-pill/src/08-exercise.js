@@ -9,7 +9,7 @@ function subtract() {
   let minus;
 
   // Add your code here
-
+  minus = a-b;
   // Don’t change this code
   return minus;
 }

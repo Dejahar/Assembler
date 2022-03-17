@@ -11,7 +11,7 @@ function getArrLength() {
   let result;
 
   // Add your code here
-
+  result = numbers.length;
   // Don’t change this code
   return result;
 }

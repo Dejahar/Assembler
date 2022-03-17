@@ -11,7 +11,7 @@ function add() {
   let sum;
 
   // Add your code here
-
+  sum = a+b;
   // Don’t change this code
   return sum;
 }

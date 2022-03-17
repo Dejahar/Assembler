@@ -9,7 +9,7 @@ function divide() {
   let division;
 
   // Add your code here
-
+  division = a/b;
   // Don’t change this code
   return division;
 }

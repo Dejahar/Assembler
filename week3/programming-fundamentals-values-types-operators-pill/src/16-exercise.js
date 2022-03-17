@@ -16,7 +16,7 @@ function twoDimensionalArray() {
   let result;
 
   // Add your code here
-
+result = tenants[1][0];
   // Don’t change this code
   return result;
 }

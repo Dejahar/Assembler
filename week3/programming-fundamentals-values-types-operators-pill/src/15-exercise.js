@@ -17,7 +17,7 @@ function changeValueInArray() {
   ];
 
   // Add your code here
-
+  fruits[3] = 'kiwi';
   // Don’t change this code
   return fruits;
 }

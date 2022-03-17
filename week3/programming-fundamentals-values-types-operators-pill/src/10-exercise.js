@@ -9,7 +9,7 @@ function multiply() {
   let multiplication;
 
   // Add your code here
-
+  multiplication = a*b;
   // Don’t change this code
   return multiplication;
 }
