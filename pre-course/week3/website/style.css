@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 960px;
+    text-decoration: none;
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* HEADER */
+
+.nav-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.071);
+    padding: 10px;
+}
+
+.nav-logo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.nav-menu-list{
+    display: inline-flex;
+    justify-content: space-between;
+    gap: 15px;
+    list-style: none;
+}
+
+.header-img img{
+    width: 960px;
+    height: 200px;
+    object-fit: fill;
+}
+
+/* BODY CONTENT */
+
+.body-content{
+    max-width: 960px;
+    margin: auto auto;
+    display:grid;
+    grid-template-rows: fit-content(50px) 1fr;
+    gap:12px;
+}
+
+.category-header{
+    background-color: darkslategray;
+    height: 50px;
+    text-align: center;
+}
+
+.category-pages{
+    max-width: 960px;
+    margin: 0 auto;
+    display: grid;
+    gap: 12px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.category-page{
+    position:relative;
+    transition:all 0.4s ;
+}
+
+.category-page img{
+    width: 468px;
+    height: 208px;
+    object-fit: fill;
+}
+
+.category-page a{
+    position: absolute;
+    top: 75%;
+    left: 20%;
+}
+
+.category-page a h4{
+    color: #fff;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    font-size: xx-large;
+}
+
+
+/* FOOTER */
+
+.footer-content{
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 10px;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+    list-style: none;
+}
+
+.footer-content h4{
+    font-size: large;
+    text-align: justify;
+    text-transform: uppercase;
+}
+
+/* EARINGS PAGE */
+
+.earing-header{
+    display: flex;
+    justify-content: center;
+}
+
+.earing-header img{
+    width: 960px;
+    height: 200px;
+    border-radius: 5px;
+    object-fit: fill;
+    position: relative;
+    transition:all 0.4s ;
+}
+.header-earing-text{
+    position: absolute;
+    right:20%;
+    top:20%;
+    color: white;
+    text-shadow: #000;
+    font-size: xx-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.address-guide{
+    display: flex;
+    padding: 10px;
+}
+
+.home-button{
+    cursor: pointer;
+}
+.earing-button{
+    cursor: pointer;
+}
+
+.product-grid-nav{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.product-grid-nav img{
+    width: 200px;
+    height: 180px;
+    object-fit: fill;
+}
+
+.product-grid-nav h4{
+    width: 200px;
+    text-align: center;
+}
+
+.product-grid-nav p{
+    width: 200px;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+/* PRODUCT BODY PAGE */
+
+.header-text h2{
+    text-align: center;
+}
+
+.productPage-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* border-style: solid; */
+}
+
+.product-grid-img{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 12px;
+    /* border-style: solid; */
+}
+
+.main-img{
+    width: 300px;
+    height: 250px;
+    object-fit: fill;
+}
+
+.img-scroll img{
+    width: 50px;
+    height: 50px;
+    object-fit: fill;
+}
+
+.img-scroll li{
+    display: inline;
+}
+
+.product-grid-details{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: stretch;
+
+    /* border-style: solid; */
+}
+
+.product-details-header h4{
+    text-align: center;
+}
+
+.product-details-button{
+    cursor: pointer;
+}
+
+.product-details-icons li{
+    display: inline;
+}
+
+.product-details li{
+    list-style-type: disc;
+}
+
+/* PRODUCT FOOTER PAGE */
+
+.product-footer{
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 12px;
+}
+
+.product-footer img{
+    width: 200px;
+    height: 180px;
+    object-fit: fill;
+}
+
+/* FAQ PAGE */
+.header-text{
+    text-align: center;
+    font-size: x-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.faq-header{
+    display: flex;
+    justify-content: center;
+}
+
+.faq-header-img img{
+    width: 960px;
+    height: 400px;
+    border-radius: 5px;
+    object-fit: fill;
+    position: relative;
+    transition:all 0.4s ;
+}
+.header-img-text{
+    position: absolute;
+    right:20%;
+    top:60%;
+    color: white;
+    text-shadow: #000;
+    font-size: xx-large;
+}
+
+/* FAQ CONTENT */
+.faq-content{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.faq-divider{
+    border-left: 6px solid burlywood;
+}

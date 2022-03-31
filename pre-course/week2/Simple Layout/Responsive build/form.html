@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=Ç, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos.css" type="text/css">
+    <script src="https://kit.fontawesome.com/42bc4784db.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@100;200&display=swap" rel="stylesheet">
+    <title>Profile</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="page_Title">Lionel Messi</h1>
+
+    <hr>
+        <div id="container">
+            <div id="img-container">
+        <img id="messi-profile" src="./assets/kisspng-lionel-messi-2018-fifa-world-cup-argentina-nationa-portrait-5abd4487ca16d4.7751302215223532878278.png"
+            alt="messi">
+        </div>
+
+        <div id="dates">
+            <p><strong>2004-2021:</strong> FC Barcelona</p>
+        <p><strong>2021-Current:</strong> PSG</p></div>
+        </div>
+    </header>
+    <hr>
+    <main>
+    <div id="bioProfile">
+        <h2 class="sec_Title">Contact Form</h2>
+        <hr>
+        <fieldset class="formContainer">
+            <form action="./registro.php">
+                <div class="item">
+                    <label for="fname">Full name:</label><br>
+                    <input type="text" id="fname" name="fname" placeholder="Enter your full name" required><br>
+                </div>
+
+                <div class="item">
+                    <label for="phone">Phone:</label><br>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Entert your phone number" required><br>
+                </div>
+
+                <div class="item">
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" pattern= "[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" placeholder="Enter your email" required><br>
+                </div>
+
+                <div class="item">
+                    <label for="address">Address:</label><br>
+                    <input type="text" id="address" name="address" placeholder="Enter your address" required><br>
+                </div>
+
+                <div class="item">
+                    <label for="dni">DNI:</label><br>
+                    <input type="regexp" id="dni" name="dni" pattern="[0-9]{8}+[a-z]{1}" placeholder="Enter your DNI" required><br>
+                </div>
+
+                <div class="item">
+                    <label for="comments">Comments:</label><br>
+                    <textarea type="text" maxlength="200" placeholder="Add your comments here"></textarea><br>
+                </div>
+
+                <button class="submit" type="submit">Submit</button>
+            </form>
+                </fieldset>
+    </div>
+        <a href="index.html" class="button">Back</a>
+    </main>
+
+    <footer id="footerProfile">
+        <hr>
+        <h2 class="sec_Title">Lionel Messi Social Media</h2>
+        <div class="icons">
+        <a href="https://www.instagram.com/leomessi/"><i id="icon" class="fa-brands fa-instagram"></i></a>
+        <a href="https://twitter.com/fundacionmessi?s=20&t=_OiyX_eA2zdyBVeRbu1tig"> <i id="icon1" class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.themessistore.com/es"><i id="icon2" class="fa-solid fa-arrow-up-right-from-square"></i></a>
+    </div>
+    </footer>
+
+</body>
+
+</html>

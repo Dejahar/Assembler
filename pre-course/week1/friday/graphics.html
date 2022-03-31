@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Graphics</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+      .example-box {
+        padding: 20px 0 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Graphics</h1>
+    <div class="subject-intro">
+      <p>
+        The <code>&lt;svg&gt;</code> and <code>&lt;canvas&gt;</code> allows the
+        developer add vectors and draw graphics on the web page
+      </p>
+    </div>
+    <h4>Example for svg:</h4>
+    <div class="example-box">
+      <p>Here's SVG vector.</p>
+      <svg height="220" width="400">
+        <polygon
+          points="60 13,110 48,92 110,30 110,13 48"
+          stroke="blue"
+          fill="yellow"
+          stroke-width="5"
+        />
+      </svg>
+    </div>
+    <h4>Example for canvas</h4>
+    <div class="example-box">
+      <p>
+        Canvas tag is transparet - to make use of it we need to implant script.
+      </p>
+      <canvas></canvas>
+    </div>
+    <a href="index.html">Back</a>
+  </body>
+</html>

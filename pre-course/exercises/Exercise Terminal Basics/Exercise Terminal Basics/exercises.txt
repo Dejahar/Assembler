@@ -1,0 +1,64 @@
+EXERCISE ONE
+
+mkdir src/css
+mkdir html
+mkdir js
+mkdir log
+mkdir static
+
+cd ..
+
+EXERCISE TWO
+
+echo "" > index.html
+echo "" > main.css
+echo "" > app.js
+echo "" > app.log
+
+EXERCISE THREE
+
+mv index.html src/html
+mv main.css src/css
+mv app.js src/js
+mv app.log src/log
+
+EXERCISE FOUR
+
+mv static tests
+
+echo "" > user.test.js
+echo "" > app.test.js
+echo "" > store.test
+
+mv user.test.js tests/
+mv app.test.js tests/
+mv store.test tests/
+
+echo "" > user.js
+echo "" > store.js
+
+mv user.js js/
+mv store.js js/
+
+EXERCISE FIVE
+
+echo "<p>Hi world</p>" > index.html
+echo "p { font-size: 1.75rem; }" > main.css
+
+EXERCISE SIX
+
+mkdir tmp
+echo "" > tmp/app.cache.txt
+ls tmp -R
+rm tmp
+
+ 
+EXERCISE SEVEN
+
+ls  -S -r
+ls -lt -r
+ls -la
+
+ADVANCED
+
+Select-String -Path .\access.log -Pattern "19/Jun/2019:19:35:00"
