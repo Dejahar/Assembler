@@ -1,0 +1,15 @@
+{
+    "name": "programming-fundamentals-data-structures-objects-arrays-pill",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest --watchAll"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "jest": "^25.3.0"
+    }
+}

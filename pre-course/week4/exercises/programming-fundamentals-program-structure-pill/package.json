@@ -1,0 +1,19 @@
+{
+    "name": "programming-fundamentals-program-structure-pill",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest --watchAll"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://code.assemblerschool.com/mike/programming-fundamentals-program-structure-pill.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "jest": "27.5.1"
+    }
+}
