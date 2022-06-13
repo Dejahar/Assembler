@@ -1,0 +1,23 @@
+<form action="" method="get">
+	<input type="text" name="first_name" value=""/>
+	<input type="submit"/>
+</form>
+
+<?php 
+#Access form Data
+
+#Step 1
+#Using Get Method
+#$_GET
+
+#Throw error first time, when value not defined in this object
+//var_dump($_GET['first_name']);
+
+//Exception handling
+//First check value
+if(isset($_GET['first_name'])){
+	var_dump($_GET['first_name']);
+}
+
+
+?>

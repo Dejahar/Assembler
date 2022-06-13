@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form action="" method="post" enctype="multipart/form-data">
+  Select image to upload:
+  <input type="file" name="file1">
+  <input type="file" name="file2">
+  <input type="submit" value="Upload Image" name="submit">
+</form>
+
+</body>
+</html>
+
+<?php
+if(isset($_POST["submit"])) {
+	//Step 1
+	$target_dir = "uploads/images";
+	//Create upload Directory
+	if(!file_exists($target_dir)) {
+	  mkdir($target_dir, 0777, true);
+	}
+	
+	#Step 2
+	#Upload first file
+	$ext = pathinfo($_FILES["file1"]["name"], PATHINFO_EXTENSION);
+	$fileName = "test1." . $ext;
+	#Where to upload file and waht is file name
+	$target_file1 = $target_dir . "/" . $fileName;
+	#Step 3
+	#Upload file
+	move_uploaded_file($_FILES["file1"]["tmp_name"], $target_file1);
+	
+	
+	#Step 2
+	#Upload second file
+	$ext2 = pathinfo($_FILES["file2"]["name"], PATHINFO_EXTENSION);
+	$fileName2 = "test2." . $ext2;
+	#Where to upload file and waht is file name
+	$target_file2 = $target_dir . "/" . $fileName2;
+	#Step 3
+	#Upload file
+	move_uploaded_file($_FILES["file2"]["tmp_name"], $target_file2);
+
+}
+?>

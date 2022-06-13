@@ -1,0 +1,37 @@
+Topic 1: Creating arrays and objects
+Topic 2: Loops
+Topic 3: Conditions
+
+
+Activity 1:
+*  
+* *  
+* * *  
+* * * *  
+* * * * * 
+
+Activity 2:
+* 
+* * 
+* * * 
+* * * * 
+* * * * * 
+* * * * * 
+* * * * 
+* * * 
+* * 
+*  
+
+Activity 2: Generate tables from a given number.
+
+1 x 2 = 2
+2 x 2 = 4
+3 x 2 = 6
+.
+.
+10 x 2 = 20
+
+
+
+
+Activity 3: Show users list from json using html and php.

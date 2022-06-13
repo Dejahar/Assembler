@@ -1,0 +1,93 @@
+<html>
+    <title>File Manager</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        a{
+            color: black;
+            text-decoration: none;
+        }
+        .row{
+            width: 100%;
+            display: block;
+            height: auto;
+        }
+        .file_manager{
+            width: 800px; 
+            height: auto; 
+            min-height: 500px;
+            margin: 0 auto;
+            background-color: rgb(215, 213, 213);
+        }
+        .top_buttons{
+            list-style-type: none;
+        }
+        .top_buttons li{
+            display: block;
+            display: block;
+            float: left;
+            padding: 5px;
+            font-size: 20px;
+        }
+        .top_buttons li img{
+            width: 15px;
+        }
+        .bred_crumbs{
+            list-style-type: none;
+        }
+        .bred_crumbs li{
+            display: block;
+            float: left;
+            padding: 5px;
+            font-size: 15px;
+        }
+        .files_listing{
+            list-style-type: none;
+        }
+        .files_listing li{
+            display: block;
+            padding: 5px;
+            font-size: 15px;
+        }
+    </style>
+    <body>
+        <div class="file_manager">
+            <div class="row">
+                <ul class="top_buttons">
+                    <li>
+                        <img src="./images/create_folder_icon.png"  /> <a href="javascript:;">Create Folder</a>
+                    </li>
+                    <li>
+                        <img src="./images/create_file_icon.png"  /> <a href="javascript:;">Create File</a>
+                    </li>
+                    <li>
+                        <img src="./images/upload_file_icon.png"  /> <a href="javascript:;">Upload File</a>
+                    </li>
+                </ul>  
+            </div>
+            
+            <br />
+
+            <div class="row">
+                <ul class="bred_crumbs">
+                    <li><img src="./images/folder_icon.png" width="12" /> <a href="javascript:;">Home</a> &nbsp; 
+                        <span> > </span> 
+                    </li>
+                </ul>
+            </div>
+
+            <br /><br /> 
+
+            <div class="row">
+                <ul class="files_listing">
+                    <li> <img src="./images/folder_icon.png" width="12" /> <a href="javascript:;">Test Folder 1</a></li>
+                    <li> <img src="./images/file_icon.png" width="12" /> <a href="javascript:;">Test File 2</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </body>
+</html>

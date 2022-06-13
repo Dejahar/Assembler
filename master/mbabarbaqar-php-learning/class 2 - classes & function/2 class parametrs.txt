@@ -1,0 +1,31 @@
+<?php 
+echo "<h1>Classes and function</h1>";
+echo "<br />";
+
+$calc = new calculator(2, 6);
+
+
+class calculator {
+	function __construct($number1, $number2) {
+		//First class Code
+		//Ladies first
+	}
+	
+	function add(){
+		//Addition
+	}
+	
+	function subtraction(){
+		//Subtraction
+	}
+	
+	function multiplication(){
+		//
+	}
+	
+	function division(){
+		
+	}
+}
+
+?>

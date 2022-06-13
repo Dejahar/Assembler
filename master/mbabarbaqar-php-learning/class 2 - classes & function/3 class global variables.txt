@@ -1,0 +1,51 @@
+<?php 
+echo "<h1>Classes and function</h1>";
+echo "<br />";
+
+$calc = new calculator(10000000000, 348495747587);
+
+echo $calc->test2;
+
+
+
+
+
+
+
+class calculator {
+	#Global variables
+	public $first_number;
+	public $second_number;
+	
+	private $test;
+	protected $test2;
+	
+	function __construct($number1, $number2) {
+		//First class Code
+		//Ladies first
+		$this->first_number = $number1;
+		$this->second_number = $number2;
+		
+		#Not accessible outside of class
+		$this->test = "secure content";
+		$this->test2 = "secure content protected";
+	}
+	
+	function add(){
+		//Addition
+	}
+	
+	function subtraction(){
+		//Subtraction
+	}
+	
+	function multiplication(){
+		//
+	}
+	
+	function division(){
+		
+	}
+}
+
+?>

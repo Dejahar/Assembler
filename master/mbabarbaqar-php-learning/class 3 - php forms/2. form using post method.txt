@@ -1,0 +1,47 @@
+<form action="" method="post">
+	<label>First Name: </label><br />
+	<input type="text" name="first_name" placeholder="First name" value=""/><br/>
+	<label>Last Name: </label><br />
+	<input type="text" name="last_name" placeholder="Last name" value=""/><br/>
+	<label>Email: </label><br />
+	<input type="email" name="email" placeholder="Enter Email" value=""/><br/>
+	<label>Phone: </label><br />
+	<input type="tel" name="phone" placeholder="Enter your phone number" value=""/><br/>
+	<label>URL: </label><br />
+	<input type="url" name="url" placeholder="Phone" value=""/><br/>
+	<input type="submit"/>
+</form>
+
+<?php 
+#Access form Data
+
+#Throw error first time, when value not defined in this object
+//var_dump($_POST['first_name']);
+
+//If some parameter available in url
+if(isset($_GET['first_name'])){
+	//Print first name
+	var_dump($_GET['first_name']);
+}
+
+#Step 2
+#Using POST Method
+#$_POST
+
+//Exception handling
+//First check value
+//Get only one field of form
+if(isset($_POST['first_name'])){
+	//Print first name
+	var_dump($_POST['first_name']);
+}
+
+//Email print 
+if(isset($_POST['first_name'])){
+	//Print first name
+	var_dump($_POST['email']);
+}
+
+
+var_dump($_POST);
+?>
